@@ -114,8 +114,8 @@ def main():
         camera.update(hero)
         for e in entities:
             mw.blit(e.image, camera.apply(e))
-        if True
-        pg.display.update()
-        clock.tick(60)
+        if True:
+            pg.display.update()
+            clock.tick(60)
 
         
