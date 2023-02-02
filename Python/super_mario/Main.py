@@ -1,6 +1,6 @@
 import pygame as pg
-from Player import *
-from Platf import *
+from Python.super_mario.Player import *
+from Python.super_mario.Platf import *
 pg.init()
 
 DISPLAY = WIN_WIDTH, WIN_HEIGHT = 800, 800
@@ -22,10 +22,10 @@ def camera_configure(camera, target_rect):
     _, _, w, h = camera
     l, t = -l+WIN_WIDTH / 2, -t+WIN_HEIGHT / 2
 
-    l = min(0, l)                           # Не движемся дальше левой границы
-    l = max(-(camera.width-WIN_WIDTH), l)   # Не движемся дальше правой границы
-    t = max(-(camera.height-WIN_HEIGHT), t) # Не движемся дальше нижней границы
-    t = min(0, t)                           # Не движемся дальше верхней границы
+    l = min(0, l)                           
+    l = max(-(camera.width-WIN_WIDTH), l)   
+    t = max(-(camera.height-WIN_HEIGHT), t) 
+    t = min(0, t)
 
     return pg.Rect(l, t, w, h)
 
