@@ -177,7 +177,7 @@ mw.blit(bg, (0,0))
 hero.update(left, right, up, platforms)
 camera.update(hero)
 for e in entities:
-mw.blit(e.image, camera.apply(e))
+    mw.blit(e.image, camera.apply(e))
 if True:
     pygame.display.update()
     clock.tick(60)
