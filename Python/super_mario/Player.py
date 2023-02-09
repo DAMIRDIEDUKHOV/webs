@@ -1,5 +1,9 @@
 import pygame as pg
 
+PF_SIZE = PF_WIDTH, PF_HEIGHT = 32, 32
+
+
+
 MOVE_SPEED = 7
 SIZE = WIDTH, HEIGHT = 22, 32
 COLOR = (150,20,240)
